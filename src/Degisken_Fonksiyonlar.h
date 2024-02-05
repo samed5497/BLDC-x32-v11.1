@@ -96,10 +96,10 @@ void buttonreadfunction()
         else if (2500 >= Buton && Buton > 1910)
         {
             duty = duty + duty_artis;
-                 if (duty > 45)
-                  {
-                    duty = 45;
-                  }
+            if (duty > 45)
+            {
+                duty = 45;
+            }
             /*
             Serial.println();
             Serial.print("[KONTROL] Duty: ");
@@ -214,19 +214,19 @@ void Surucu_Fonksiyonlari()
     {
         Motor_PWM(M_A_HIN_PIN, M_A_KAN_PIN, Motor_resolotion, frekans, duty);
         delayMicroseconds(bekleme);
-        Motor_STOP(M_A_HIN_PIN);
+        Motor_STOP(M_A_KAN_PIN);
 
         Motor_PWM(M_B_HIN_PIN, M_B_KAN_PIN, Motor_resolotion, frekans, duty);
         delayMicroseconds(bekleme);
-        Motor_STOP(M_B_HIN_PIN);
+        Motor_STOP(M_B_KAN_PIN);
 
         Motor_PWM(M_C_HIN_PIN, M_C_KAN_PIN, Motor_resolotion, frekans, duty);
         delayMicroseconds(bekleme);
-        Motor_STOP(M_C_HIN_PIN);
+        Motor_STOP(M_C_KAN_PIN);
 
         // Adan_Bye();
         // delayMicroseconds(bekleme);
-        // Adan_Cye();        
+        // Adan_Cye();
         // delayMicroseconds(bekleme);
         // Bden_Cye();
         // delayMicroseconds(bekleme);
@@ -236,5 +236,11 @@ void Surucu_Fonksiyonlari()
         // delayMicroseconds(bekleme);
         // Cden_Bye();
         // delayMicroseconds(bekleme);
+    }
+    else
+    {
+        Motor_STOP(M_A_HIN_PIN);
+        Motor_STOP(M_B_HIN_PIN);
+        Motor_STOP(M_C_HIN_PIN);
     }
 }

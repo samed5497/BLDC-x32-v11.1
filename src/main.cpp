@@ -59,10 +59,10 @@ void loop()
 {
     if (Update_Mod != 1)
     {
-        temperaturesfunction();
-        buttonreadfunction();
-        currentreadfunction();
-        LCD_report_func();
+        //temperaturesfunction();
+        //buttonreadfunction();
+        //currentreadfunction();
+        //LCD_report_func();
         Surucu_Fonksiyonlari();
         Zaman_Guncellemesi();
         Seriport_Rapor();

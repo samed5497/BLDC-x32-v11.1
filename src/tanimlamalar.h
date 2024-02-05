@@ -57,7 +57,7 @@ int IN_BUTON_0 = 0;
 int musade = 500;
 int Motor_resolotion = 8;
 int pin, kanal, Buton;
-int frekans = 10000;
+int frekans = 1000;
 float duty = 10;
 float duty_artis = 2;
 unsigned int bekleme = 50000;
