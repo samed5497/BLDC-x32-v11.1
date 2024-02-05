@@ -42,12 +42,21 @@ void Sunucu_mod_sayfalar()
     server.on("/duytarttir", HTTP_GET, [](AsyncWebServerRequest *request)
               {
                   duty = duty + duty_artis;
+                  if (duty > 45)
+                  {
+                      duty = 45;
+                  }
                   request->send(200); // Başarılı bir istek durumunda 200 kodunu gönderir
               });
 
     server.on("/duytazalt", HTTP_GET, [](AsyncWebServerRequest *request)
               {
                   duty = duty - duty_artis;
+
+                  if (duty < 0)
+                  {
+                      duty = 0;
+                  }
                   request->send(200); // Başarılı bir istek durumunda 200 kodunu gönderir
               });
 
