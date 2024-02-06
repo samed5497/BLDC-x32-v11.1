@@ -1,7 +1,5 @@
 #include "web/Sunucu_mod_sayfalar.h"
 
-
-
 void Web_Sunucu_Baslat()
 {
   ws.onEvent(onWebSocketEvent);

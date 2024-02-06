@@ -4,7 +4,7 @@ void Seriport_Rapor() // sure = ms
 {
     if (millis() - lastTime_DONGU > seriport_sure and Update_Mod == 0 and SeriPort_Durum == 1)
     {
-        Sistem_Saat_Guncelleme();
+        
 
         Serial.println(" ");
         Serial.print(" ~ Octo Pwr           = ");

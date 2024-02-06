@@ -136,6 +136,7 @@ void Zaman_Guncellemesi()
 
 void Sistem_Saat_Guncelleme()
 {
+    Zaman_Guncellemesi();
     gecensure_sn = lastTime_DONGU / 1000;
     gecensure_dk = lastTime_DONGU / 60000;
     gecensure_saat = lastTime_DONGU / 3600000;
@@ -261,8 +262,6 @@ void temperaturesfunction()
     }
 }
 
-
-
 /*
 
 void Adan_Bye()
@@ -311,7 +310,7 @@ void Adan_Cye()
 
 void Bden_Cye()
 {
-  
+
 
     Motor_STOP(M_A_KAN_PIN);
     digitalWrite(M_A_LIN_PIN, LOW);
@@ -377,7 +376,7 @@ void Cden_Aya()
 
 void Cden_Bye()
 {
-  
+
 
     Motor_STOP(M_A_KAN_PIN);
     digitalWrite(M_A_LIN_PIN, LOW);
@@ -398,5 +397,3 @@ void Cden_Bye()
 }
 
 */
-
-
