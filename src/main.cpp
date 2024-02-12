@@ -65,7 +65,7 @@ void loop()
         // LCD_report_func();
         Surucu_Fonksiyonlari();
         Sistem_Saat_Guncelleme();
-        // Seriport_Rapor();
+        //Seriport_Rapor();
     }
     if (Kurulum_Modu)
     {
